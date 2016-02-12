@@ -6,3 +6,7 @@
 
 # Python virtual environment
 venv/
+
+# Javascript packages
+bower_components/
+node_modules/

@@ -1,0 +1,22 @@
+{
+  "name": "presentation-template",
+  "authors": [
+    "Sam Roeca <samuel.roeca@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./app/static/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "remark": "~0.13.0"
+  }
+}
