@@ -1,0 +1,8 @@
+# Python files
+*.pyc
+
+# Swap files
+*.swp
+
+# Python virtual environment
+venv/
