@@ -1,7 +1,6 @@
 {% extends "base_template.html" %}
 {% block slideshow %}
 name:agenda
-class:middle, center
 
 # Introduction
 

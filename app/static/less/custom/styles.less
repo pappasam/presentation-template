@@ -1,66 +1,87 @@
 /* Basic theme for remark slides */
+
 /*******************************************************
 * Define less variables
 *******************************************************/
+
 /* basics and margins */
+@list-margin: 1em 0;
+@fonts: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 /* Colors with names */
+@color-grey: #555555;
+@color-header: #00989e;
+@color-white: #FFFFFF;
+
 /* Text size and lines */
+@text-size: 24px;
+@strong-weight: 500;
+
 /*******************************************************
 * Basic HTML elements
 *******************************************************/
 html {
   font-size: 100%;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: @fonts;
 }
+
 body {
   margin: 0;
   line-height: 1.5;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 24px;
-  color: #555555;
-  background-color: #FFFFFF;
+  font-family: @fonts;
+  font-size: @text-size;
+  color: @color-grey;
+  background-color: @color-white;
 }
+
 a {
-  color: #555555;
+  color: @color-grey;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: @strong-weight;
 }
-a:hover,
-a:focus {
-  color: #00989e;
+
+a:hover, a:focus {
+  color: @color-header;
   text-decoration: underline;
 }
+
 a:focus {
-  outline: 3px solid #00989e;
+  outline: 3px solid @color-header;
   outline-offset: 0;
-  background-color: #00989e;
-  color: #FFFFFF;
+  background-color: @color-header;
+  color: @color-white;
   text-decoration: none;
 }
+
 ol {
   padding: 0 0 0 1.5em;
-  margin: 1em 0;
+  margin: @list-margin;
 }
+
 ul {
   padding: 0 0 0 1em;
-  margin: 1em 0;
+  margin: @list-margin;
 }
+
 img {
   vertical-align: middle;
   max-height: 600px;
   margin: 0 auto 1em;
   display: block;
 }
+
 hr {
   height: 0;
   margin: 1em 0;
   border: 0;
   border-top: 1px solid #cccccc;
 }
+
 b,
 strong {
-  font-weight: 500;
+  font-weight: @strong-weight;
 }
+
 blockquote {
   border-left: 5px solid #cccccc;
   padding-left: 1em;
@@ -68,19 +89,27 @@ blockquote {
   font-style: italic;
   color: #999999;
 }
+
 /*******************************************************
 * Format slides for remarkjs
 *******************************************************/
 .remark-slide {
   display: table;
 }
+
 .remark-slide-content {
   margin: 1em 0 0.5em;
   display: table-cell;
   vertical-align: top;
   padding: 2em 4em;
-  font-size: 24px;
+  font-size: @text-size;
 }
+
+#remark-slide-content-header-template() {
+  color: @color-header;
+  font-weight: @strong-weight;
+}
+
 .remark-slide-content h1 {
   /* Begin horizontal center */
   margin: auto;
@@ -88,41 +117,44 @@ blockquote {
   padding: 10px;
   text-align: center;
   /* End horizontal center */
-  font-size: 60px;
-  color: #00989e;
-  font-weight: 500;
+
+  font-size: @text-size * 2.5;
+  #remark-slide-content-header-template
 }
+
 .remark-slide-content h2 {
-  font-size: 52.8px;
-  color: #00989e;
-  font-weight: 500;
+  font-size: @text-size * 2.2;
+  #remark-slide-content-header-template
 }
+
 .remark-slide-content h3 {
-  font-size: 48px;
-  color: #00989e;
-  font-weight: 500;
+  font-size: @text-size * 2.0;
+  #remark-slide-content-header-template
 }
+
 .remark-slide-content h4 {
-  font-size: 43.2px;
-  color: #00989e;
-  font-weight: 500;
+  font-size: @text-size * 1.8;
+  #remark-slide-content-header-template
 }
+
 .remark-slide-content h5 {
-  font-size: 38.4px;
-  color: #00989e;
-  font-weight: 500;
+  font-size: @text-size * 1.6;
+  #remark-slide-content-header-template
 }
+
 .remark-slide-content h6 {
-  font-size: 33.6px;
-  color: #00989e;
-  font-weight: 500;
+  font-size: @text-size * 1.4;
+  #remark-slide-content-header-template
 }
+
 .remark-slide-content > :first-child {
   margin-top: 0;
 }
+
 .remark-slide-content > :last-child {
   margin-bottom: 0;
 }
+
 .footnote {
   position: absolute;
   bottom: 3em;
