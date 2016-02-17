@@ -7,8 +7,10 @@ virtualenv -p python3.4 venv
 source venv/bin/activate
 pip install -U pip
 pip install -r requirements.txt
+sudo npm install -g bower
 npm install
 bower install
+make
 python application.py
 ```
 
