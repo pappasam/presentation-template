@@ -142,3 +142,8 @@ blockquote {
 .remark-slide-content > :last-child {
   margin-bottom: 0;
 }
+
+.footnote {
+  position: absolute;
+  bottom: 3em;
+}
