@@ -136,12 +136,3 @@ blockquote {
 .remark-slide-content > :last-child {
   margin-bottom: 0;
 }
-
-/*
-.remark-code-line {
-  white-space: normal;
-  background-color: #000;
-  border: 1px solid #000;
-  color: #fff;
-  padding: 0 1em;
-}*/
