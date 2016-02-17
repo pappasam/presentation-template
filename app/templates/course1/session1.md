@@ -7,7 +7,7 @@ class:middle, center
 
 This is a presentation about making slides with remark.
 
-This is also session 1
+This is also session 1, called {{ name }}.
 
 ---
 

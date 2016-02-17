@@ -3,11 +3,11 @@
   <head>
     <title>Base presentation</title>
     <meta charset="utf-8">
-    <link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='css/custom/styles.css') }}">
+    <link rel='stylesheet' type='text/css' href="%% url_for('static', filename='css/custom/styles.css') %%">
   </head>
   <body>
     <h2>Course 1</h2>
-    <a href="{{ url_for('course1.session1') }}">Session 1</a><br>
-    <a href="{{ url_for('course1.session2') }}">Session 2</a>
+    <a href="%% url_for('course1.session1') %%">Session 1</a><br>
+    <a href="%% url_for('course1.session2') %%">Session 2</a>
   </body>
 </html>
