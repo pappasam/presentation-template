@@ -94,12 +94,18 @@ blockquote {
 
 .remark-slide-content {
   display: table-cell;
-  vertical-align: middle;
-  padding: 0 4em;
+  vertical-align: top;
+  padding: 2em 4em;
   font-size: 24px;
 }
 
 .remark-slide-content h1 {
+  /* Begin horizontal center */
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  text-align: center;
+  /* End horizontal center */
   font-size: 56px;
   color: #00989e;
 }
