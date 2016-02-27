@@ -1,11 +1,12 @@
 {% extends "base_template.html" %}
 {% block slideshow %}
+name: pres2
 
 # Introduction
 
 This is a presentation about making slides with remark.
 
-This is also session 2
+This is also session 2, called {{ name }}
 
 ---
 

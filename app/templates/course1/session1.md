@@ -8,6 +8,13 @@ This is a presentation about making slides with remark.
 
 This is also session 1, called {{ name }}.
 
+???
+
+# Note 1
+
+1. Hello
+2. World
+
 ---
 
 # Agenda
@@ -22,8 +29,17 @@ This is also session 1, called {{ name }}.
 The most important thing we'll be presenting is code. This tool makes that super easy.
 
 ```python
+def hello():
+    '''Return the string 'hello' '''
+    return "hello"
+
+def world():
+    '''Return the string 'world' '''
+    return "world"
+
 def hello_world():
-    return "hello world"
+    '''Return the string 'hello world' '''
+    return "{} {}".format(hello(), world())
 
 if __name__ == '__main__':
     print(hello_world())
