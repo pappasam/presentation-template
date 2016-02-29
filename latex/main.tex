@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage[hmargin=1.25in,vmargin=1in]{geometry}
+\usepackage[english]{babel}
+\usepackage{longtable}
+
+%----------------------------------------------------------------------
+% Create title
+%----------------------------------------------------------------------
+\title{Animal and Fruit Standards}
+\date{}
+\author{Samuel Roeca\\ Furry and Sweet Co.}
+%----------------------------------------------------------------------
+% Define macros
+%----------------------------------------------------------------------
+\newcommand{\customtable}[2] {
+  % Custom Macro to standardize table entries
+  % 1=Table name, 2=Import file
+  \begin{longtable}{| l | l |}
+    \caption{#1} \\
+    \hline
+    Code & Description \\
+    \hline
+    \endfirsthead
+    \caption[]{#1 (continued)} \\
+    \hline
+    Code & Description \\
+    \hline
+    \endhead
+    \input{#2}
+    \hline
+  \end{longtable}
+}
+%----------------------------------------------------------------------
+% Begin document
+%----------------------------------------------------------------------
+\begin{document}
+\maketitle
+\newpage
+\customtable{Animals}{./animals.tex}
+\newpage
+\customtable{Fruits}{./fruits.tex}
+\end{document}
